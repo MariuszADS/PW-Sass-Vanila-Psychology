@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    background-color: #a2c3a1;
+    font-family: "Roboto",serif;
+    color: black;
+    font-size: 36px;
+    height: 100vh;
+}
+
+
+nav{
+    position: sticky;
+    top: 0;
+    line-height: 50px;
+	text-align: left;
+    position: sticky;
+   
+}
+
+a{
+    position: relative;
+    z-index: 10;
+    text-decoration: none;
+    margin: 15px 0  0  50px ;
+    color: white;
+    cursor: pointer;
+}
+
+
+.header-img{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url('/img/norway-4970081_1280.jpg');
+    height: 100vh;
+}
+
+.academic_title{
+    position: absolute;
+    top: 80%;
+    left: 3%;
+}
+
+.name_surname{
+    position: absolute;
+    top: 85%;
+    left: 3%;
+    color: white;
+}
+
