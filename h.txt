@@ -1,0 +1,6 @@
+19.11.2023 - 2h 40 min 
+I was doing:
+    -nav
+    -img nav/header
+    -added adcademic titles
+*PROBLEM WAS/IS: How to put shadow on nav while it is on img.
