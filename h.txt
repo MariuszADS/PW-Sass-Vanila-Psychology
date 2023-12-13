@@ -4,3 +4,9 @@ I was doing:
     -img nav/header
     -added adcademic titles
 *PROBLEM WAS/IS: How to put shadow on nav while it is on img.
+
+20.11.2023 - 2h
+I have done:
+    -nav
+    -img nav/header
+    
