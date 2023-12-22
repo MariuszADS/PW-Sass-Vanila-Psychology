@@ -9,4 +9,8 @@ I was doing:
 I have done:
     -nav
     -img nav/header
+
+22.12.2023 - around 6h 
+
+I created style from begining
     

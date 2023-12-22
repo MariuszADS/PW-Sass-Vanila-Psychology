@@ -1,97 +1,117 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
 }
 
 body {
-  background-color: #bbcbbb;
-  font-family: "Roboto", serif;
-  color: black;
-  font-size: 36px;
-  height: 100vh;
+  background-color: #95c58b;
+  font-style: "helvetica", "serif";
+  font-size: 4rem;
 }
 
-nav {
+.nav {
   position: fixed;
-  top: 0;
-  line-height: 50px;
-  text-align: left;
-  display: inline;
-  background-color: gray;
   width: 100%;
-  height: 60px;
 }
-
-ul {
-  display: block;
+.nav_menu {
+  position: relative;
+  top: -1.7px;
+  left: -1.7px;
+  height: 20%;
+  background: #a8a7a7;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
   list-style-type: none;
 }
-
-li {
-  float: left;
-}
-
-a {
+.nav_menu a {
+  margin: 1em;
+  font-weight: normal;
   text-decoration: none;
-  margin: 15px 0 0 50px;
-  color: white;
-  cursor: pointer;
+  color: rgb(255, 255, 255);
 }
 
-.header-img {
-  position: relative;
-  background-size: cover;
+.header-image {
+  background-image: url("../img/norway-4970081_1280.jpg");
   background-position: center;
+  background-size: cover;
   background-attachment: fixed;
-  background-image: url("/img/norway-4970081_1280.jpg");
+  width: 100%;
   height: 100vh;
-  z-index: -10;
+}
+.header-image .container {
+  display: flex;
+  justify-content: flex-end; /* Wyrównaj do lewej strony (osie głównej) */
+  align-items: flex-end; /* Wyrównaj do dolnej strony (osie poprzecznej)*/
+  height: 80vh; /* Dla przykładu, ustawia wysokość kontenera na całą wysokość widoku (viewport) */
+  margin-right: 170px;
+  font-size: 3.5rem;
+}
+.header-image .container_header-title::first-line {
+  color: rgb(255, 255, 255);
+  font-weight: 700;
 }
 
-.academic_title {
-  position: absolute;
-  top: 80%;
-  left: 7.5%;
+.about_me-image {
+  width: 30%;
+  height: 30%;
 }
 
-.name_surname {
-  position: absolute;
-  top: 85%;
-  left: 7.5%;
-  color: white;
+@media screen and (max-width: 786px) {
+  .header-image {
+    width: 100%;
+    height: 0 auto;
+  }
+  .container_header-title {
+    margin: 1em;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  .nav {
+    height: 30%;
+    font-size: 1.9rem;
+    margin: 0.2rem;
+  }
+  .about_me-heading {
+    font-size: 2.5rem;
+  }
+  .about_me-box {
+    width: 100%;
+    height: 0 auto;
+  }
+  .about_me .about_me-text {
+    position: relative;
+    top: -110px;
+    font-size: 0.7rem;
+  }
 }
-
-h3.me {
+.about_me-heading {
+  display: flex;
+  justify-content: center; /* Wyrównaj do lewej strony (osie głównej) */
+  margin: 2em;
+}
+.about_me-box {
   position: relative;
-  top: 90px;
-  left: 20px;
-  margin: 20px 20px 20px 70px;
-  padding: 10px;
+  right: 50px;
+  margin: 1em;
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+  flex-direction: column;
+  z-index: -100;
 }
-
-p.me {
+.about_me-box .about_me-image {
+  border-radius: 50px;
+}
+.about_me-text {
   position: relative;
-  top: 60px;
-  left: 100px;
-  margin: 20px 0 0 40px;
-  padding: 10px;
-  font-size: 30px;
-}
-
-.break_line {
-  inline-size: 800px;
-  overflow-wrap: break-word;
-}
-
-.resize {
-  position: relative;
-  top: -40px;
-  left: -130px;
-  float: right;
-  width: 700px;
-  height: auto;
-  margin: 30px;
-  border-radius: 8px;
-  border: 5px solid white;
+  margin: 2em;
+  font-size: 3rem;
 }/*# sourceMappingURL=style.css.map */
