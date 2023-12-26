@@ -63,6 +63,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 2.5em;
+  font-size: 3.6rem;
 }
 .about_me-box {
   position: relative;
@@ -74,16 +75,25 @@ body {
 }
 .about_me-image {
   width: 40%;
-  height: 40%;
+  height: 0 auto;
   border-radius: 10px;
   border: 2px solid white;
 }
+.about_me-text {
+  font-size: 2.9rem;
+  margin: 0 3rem 0 1rem;
+}
+.about_me-text strong {
+  color: red;
+}
+
+.offers_section-heading {
+  display: flex;
+  justify-content: center;
+  margin: 5em;
+}
 
 @media screen and (max-width: 786px) {
-  .header-image {
-    width: 100%;
-    height: 0 auto;
-  }
   .container_header-title {
     margin: 1em;
     font-size: 1.6rem;
@@ -94,23 +104,32 @@ body {
     font-size: 1.9rem;
     margin: 0.2rem;
   }
-}
-.about_me-heading {
-  display: flex;
-  font-size: 2.5rem;
-  justify-content: center; /* Wyrównaj do lewej strony (osie głównej) */
-  margin: 2em;
-}
-.about_me-box {
-  position: relative;
-  top: -1.5em;
-  left: 1em;
-  display: flex;
-  justify-content: center;
-  z-index: -100;
-}
-.about_me-image {
-  border-radius: 10px;
-  width: 90%;
-  height: 0 auto;
+  .about_me-heading {
+    display: flex;
+    font-size: 2.5rem;
+    justify-content: center; /* Wyrównaj do lewej strony (osie głównej) */
+    margin: 2em;
+  }
+  .about_me-box {
+    position: relative;
+    top: -1.5em;
+    left: 1em;
+    display: flex;
+    justify-content: center;
+    z-index: -100;
+  }
+  .about_me-image {
+    border-radius: 10px;
+    width: 86%;
+    height: 0 auto;
+  }
+  .about_me-text {
+    position: absolute;
+    top: 220px;
+    left: 10px;
+    font-size: 1.5rem;
+  }
+  .about_me-text strong {
+    color: red;
+  }
 }/*# sourceMappingURL=style.css.map */
