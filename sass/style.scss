@@ -73,21 +73,24 @@ body {
 	&-box {
 		position: relative;
 		display: flex;
-		justify-content: flex-end;
-		margin-top: 3em;
-		margin-right: 2em;
+		justify-content: center;
+		margin: 1em;
+
 		z-index: -100;
 	}
 
 	&-image {
+		position: relative;
+
 		width: 40%;
 		height: 0 auto;
+
 		border-radius: 10px;
 		border: 2px solid white;
 	}
 	&-text {
-		font-size: 2.9rem;
-		margin: 0 3rem 0 1rem;
+		font-size: 2.3rem;
+		margin: 1.5em;
 
 		strong {
 			color: red;
@@ -104,40 +107,34 @@ body {
 .my_offers-heading {
 	display: flex;
 	justify-content: center;
-	margin: 3em 0 3em 0;
+	margin: 2em 0 1em 0;
 }
 
 .my_offers {
 	position: relative;
-	// right: 3em;
 	margin: 20px 85px;
 	width: 300px;
 	height: 400px;
 	z-index: -100;
-	// align-items: center;
-	// justify-content: center;
 	
-	
-
 	&-image {
-		width: 100%;
+		width: 90%;
 		height: 0 auto;
 		border: 3px white solid;
 		border-radius: 15px;
+		padding: 1em;
 	}
-
+	
 	&-title {
 		font-size: 2.4rem;
 		font-weight: 800;
-		margin: 1em 0 0.6em 0;
+		margin: .5em 0 ;
 	}
-
+	
 	&-text {
 		font-size: 2rem;
 	}
 }
-
-
 
 // min-width - od tej rozdzielczosci
 // max-width - do tej rozdzielczosci
@@ -179,27 +176,25 @@ body {
 			font-size: 2.5rem;
 			justify-content: center; /* Wyrównaj do lewej strony (osie głównej) */
 			// align-items: flex-end;
-			margin: 2em;
+			// margin: 1em
 		}
 
 		&-box {
 			position: relative;
-			top: -1.5em;
-			left: 1em;
+
 			display: flex;
+			flex-direction: column;
 			justify-content: center;
+
 			z-index: -100;
 		}
 		&-image {
+			width: 250px;
+			height: 200px;
 			border-radius: 10px;
-			width: 86%;
-			height: 0 auto;
 		}
 
 		&-text {
-			position: absolute;
-			top: 220px;
-			left: 10px;
 			font-size: 1.5rem;
 
 			strong {
@@ -208,10 +203,28 @@ body {
 		}
 	}
 
-	.offers_box {
-		&-heading {
-			position: relative;
-			top: 1em;
+	.my_offers-section{
+		justify-content: center;
+	}
+
+	.row {
+		display: flex;
+		flex-direction: column;
+
+		.my_offers {
+			width: 200px;
+			height: 300px;
+			margin-top: .5em;
+			margin-bottom: .5em;
+			
+
+			&-title {
+				display: flex;
+				flex-direction: row;
+				font-size: 2rem;
+				margin: 0 1.3em;
+			}
+			
 		}
 	}
 }

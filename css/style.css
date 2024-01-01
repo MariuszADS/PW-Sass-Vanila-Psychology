@@ -68,20 +68,20 @@ body {
 .about_me-box {
   position: relative;
   display: flex;
-  justify-content: flex-end;
-  margin-top: 3em;
-  margin-right: 2em;
+  justify-content: center;
+  margin: 1em;
   z-index: -100;
 }
 .about_me-image {
+  position: relative;
   width: 40%;
   height: 0 auto;
   border-radius: 10px;
   border: 2px solid white;
 }
 .about_me-text {
-  font-size: 2.9rem;
-  margin: 0 3rem 0 1rem;
+  font-size: 2.3rem;
+  margin: 1.5em;
 }
 .about_me-text strong {
   color: red;
@@ -96,7 +96,7 @@ body {
 .my_offers-heading {
   display: flex;
   justify-content: center;
-  margin: 3em 0 3em 0;
+  margin: 2em 0 1em 0;
 }
 
 .my_offers {
@@ -107,15 +107,16 @@ body {
   z-index: -100;
 }
 .my_offers-image {
-  width: 100%;
+  width: 90%;
   height: 0 auto;
   border: 3px white solid;
   border-radius: 15px;
+  padding: 1em;
 }
 .my_offers-title {
   font-size: 2.4rem;
   font-weight: 800;
-  margin: 1em 0 0.6em 0;
+  margin: 0.5em 0;
 }
 .my_offers-text {
   font-size: 2rem;
@@ -136,32 +137,42 @@ body {
     display: flex;
     font-size: 2.5rem;
     justify-content: center; /* Wyrównaj do lewej strony (osie głównej) */
-    margin: 2em;
   }
   .about_me-box {
     position: relative;
-    top: -1.5em;
-    left: 1em;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     z-index: -100;
   }
   .about_me-image {
+    width: 250px;
+    height: 200px;
     border-radius: 10px;
-    width: 86%;
-    height: 0 auto;
   }
   .about_me-text {
-    position: absolute;
-    top: 220px;
-    left: 10px;
     font-size: 1.5rem;
   }
   .about_me-text strong {
     color: red;
   }
-  .offers_box-heading {
-    position: relative;
-    top: 1em;
+  .my_offers-section {
+    justify-content: center;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .row .my_offers {
+    width: 200px;
+    height: 300px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  .row .my_offers-title {
+    display: flex;
+    flex-direction: row;
+    font-size: 2rem;
+    margin: 0 1.3em;
   }
 }/*# sourceMappingURL=style.css.map */
