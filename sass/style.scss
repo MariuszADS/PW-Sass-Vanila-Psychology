@@ -116,7 +116,7 @@ body {
 	width: 300px;
 	height: 400px;
 	z-index: -100;
-	
+
 	&-image {
 		width: 90%;
 		height: 0 auto;
@@ -124,15 +124,48 @@ body {
 		border-radius: 15px;
 		padding: 1em;
 	}
-	
+
 	&-title {
 		font-size: 2.4rem;
 		font-weight: 800;
-		margin: .5em 0 ;
+		margin: 0.5em 0;
 	}
-	
+
 	&-text {
 		font-size: 2rem;
+	}
+}
+
+.my_prices {
+	&-heading {
+		display: flex;
+		justify-content: center;
+		margin: 1em;
+		color: black;
+	}
+	&-box {
+		position: relative;
+		z-index: -100;
+	}
+	&-image {
+		display: none;
+		position: absolute;
+		top: 50%;
+		left: 15%;
+		translate: transform(-50%, -50%);
+		width: 1400px;
+		height: 700px;
+		border: 3px solid black;
+		border-radius: 30px;
+		opacity: 0.4;
+	}
+	&-list {
+		display: flex;
+		flex-direction: column;
+		align-items: left;
+		// position: relative;
+		// // top: 10%;
+		// margin: .5em;
 	}
 }
 
@@ -185,7 +218,7 @@ body {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
-
+			align-items: center;
 			z-index: -100;
 		}
 		&-image {
@@ -203,28 +236,52 @@ body {
 		}
 	}
 
-	.my_offers-section{
-		justify-content: center;
-	}
+	// .my_offers-heading {
+	// 	// justify-content: center;
+	// }
 
 	.row {
 		display: flex;
 		flex-direction: column;
 
 		.my_offers {
-			width: 200px;
+			width: 230px;
 			height: 300px;
-			margin-top: .5em;
-			margin-bottom: .5em;
-			
+			margin-right: 1.5em;
+			margin-top: 0.5em;
+
+			margin-bottom: 0.5em;
 
 			&-title {
 				display: flex;
+				align-items: center;
 				flex-direction: row;
 				font-size: 2rem;
-				margin: 0 1.3em;
+				margin: 0 2em;
 			}
-			
+		}
+	}
+
+	.my_prices {
+		&-heading {
+			display: flex;
+			justify-content: center;
+			margin: 1em;
+			color: black;
+		}
+
+		&-image {
+			display: none;
+		}
+
+		&-list {
+			font-size: 2.5rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		&-elementList {
+			margin: 1em;
 		}
 	}
 }

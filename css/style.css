@@ -122,6 +122,34 @@ body {
   font-size: 2rem;
 }
 
+.my_prices-heading {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+  color: black;
+}
+.my_prices-box {
+  position: relative;
+  z-index: -100;
+}
+.my_prices-image {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  translate: transform(-50%, -50%);
+  width: 1400px;
+  height: 700px;
+  border: 3px solid black;
+  border-radius: 30px;
+  opacity: 0.4;
+}
+.my_prices-list {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
 @media screen and (max-width: 786px) {
   .container_header-title {
     margin: 1em;
@@ -143,6 +171,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     z-index: -100;
   }
   .about_me-image {
@@ -156,23 +185,40 @@ body {
   .about_me-text strong {
     color: red;
   }
-  .my_offers-section {
-    justify-content: center;
-  }
   .row {
     display: flex;
     flex-direction: column;
   }
   .row .my_offers {
-    width: 200px;
+    width: 230px;
     height: 300px;
+    margin-right: 1.5em;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
   }
   .row .my_offers-title {
     display: flex;
+    align-items: center;
     flex-direction: row;
     font-size: 2rem;
-    margin: 0 1.3em;
+    margin: 0 2em;
+  }
+  .my_prices-heading {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+    color: black;
+  }
+  .my_prices-image {
+    display: none;
+  }
+  .my_prices-list {
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .my_prices-elementList {
+    margin: 1em;
   }
 }/*# sourceMappingURL=style.css.map */
