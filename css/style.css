@@ -62,7 +62,8 @@ body {
 .about_me-heading {
   display: flex;
   justify-content: center;
-  margin-top: 2.5em;
+  margin-top: 3em;
+  margin-bottom: 3em;
   font-size: 3.6rem;
 }
 .about_me-box {
@@ -74,7 +75,7 @@ body {
 }
 .about_me-image {
   position: relative;
-  width: 40%;
+  width: 50%;
   height: 0 auto;
   border-radius: 10px;
   border: 2px solid white;
@@ -90,7 +91,7 @@ body {
 .row {
   display: flex;
   flex-direction: row;
-  justify-content: right;
+  justify-content: center;
 }
 
 .my_offers-heading {
@@ -101,53 +102,89 @@ body {
 
 .my_offers {
   position: relative;
-  margin: 20px 85px;
+  margin: 2em;
   width: 300px;
   height: 400px;
   z-index: -100;
 }
 .my_offers-image {
-  width: 90%;
+  width: 100%;
   height: 0 auto;
   border: 3px white solid;
   border-radius: 15px;
   padding: 1em;
 }
 .my_offers-title {
-  font-size: 2.4rem;
+  font-size: 2.1rem;
   font-weight: 800;
   margin: 0.5em 0;
+  text-align: center;
 }
-.my_offers-text {
-  font-size: 2rem;
-}
-
-.my_prices-heading {
+.my_offers-heading {
   display: flex;
   justify-content: center;
-  margin: 1em;
-  color: black;
+  margin-top: 4em;
 }
-.my_prices-box {
-  position: relative;
-  z-index: -100;
+
+.mainHeading {
+  text-align: center;
 }
-.my_prices-image {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 15%;
-  translate: transform(-50%, -50%);
-  width: 1400px;
-  height: 700px;
-  border: 3px solid black;
-  border-radius: 30px;
-  opacity: 0.4;
+
+.flex-container {
+  display: flex;
+  justify-content: center;
 }
-.my_prices-list {
+.flex-container .cards {
+  display: flex;
+  justify-content: center;
+  width: 165rem;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+.flex-container .cards .card {
+  background-color: gray;
+  width: 60rem;
+  height: 40rem;
+  margin: 0.5em;
+}
+.flex-container .cards .card .text {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 80px 30px;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: wheat;
+  -webkit-clip-path: circle(0% at 50% 80%);
+          clip-path: circle(0% at 50% 80%);
+  transition: -webkit-clip-path 1.2s;
+  transition: clip-path 1.2s;
+  transition: clip-path 1.2s, -webkit-clip-path 1.2s;
+}
+
+.one {
+  background-image: url("/img/butterfly-8422900_640.jpg");
+}
+
+button {
+  position: relative;
+  padding: 10px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  cursor: crosshair;
+  z-index: 10;
+}
+
+button:hover ~ .text {
+  -webkit-clip-path: circle(120% at 50% 80%);
+          clip-path: circle(120% at 50% 80%);
 }
 
 @media screen and (max-width: 786px) {
@@ -188,6 +225,7 @@ body {
   .row {
     display: flex;
     flex-direction: column;
+    z-index: -100;
   }
   .row .my_offers {
     width: 230px;
@@ -202,23 +240,5 @@ body {
     flex-direction: row;
     font-size: 2rem;
     margin: 0 2em;
-  }
-  .my_prices-heading {
-    display: flex;
-    justify-content: center;
-    margin: 1em;
-    color: black;
-  }
-  .my_prices-image {
-    display: none;
-  }
-  .my_prices-list {
-    font-size: 2.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .my_prices-elementList {
-    margin: 1em;
   }
 }/*# sourceMappingURL=style.css.map */
