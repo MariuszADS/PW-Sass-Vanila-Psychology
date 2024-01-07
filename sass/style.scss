@@ -25,13 +25,13 @@ body {
 		height: 20%;
 		background: #62789d;
 		display: flex;
-		flex-direction: row;
+		// flex-direction: row;
 		justify-content: right;
 		align-items: center;
 		list-style-type: none;
 		a {
 			margin: 1em;
-			// font-size: 2rem;
+			font-size: 3rem;
 			font-weight: normal;
 			text-decoration: none;
 			color: rgb(255, 255, 255);
@@ -69,6 +69,7 @@ body {
 		margin-top: 3em;
 		margin-bottom: 3em;
 		font-size: 3.6rem;
+		border: 1px solid white;
 	}
 
 	&-box {
@@ -139,6 +140,7 @@ body {
 		display: flex;
 		justify-content: center;
 		margin-top: 4em;
+		border: 1px solid white;
 	}
 }
 
@@ -146,10 +148,13 @@ body {
 	text-align: center;
 	font-size: 4rem;
 	margin-top: 2em;
+	border: 1px solid white;
+	
 }
 .flex-container {
 	display: flex;
 	justify-content: center;
+	margin-bottom: 2em;
 }
 .cards {
 	display: flex;
@@ -176,6 +181,7 @@ body {
 .heading {
 	text-align: center;
 	font-size: 3rem;
+	
 }
 
 .main-text {
@@ -198,24 +204,85 @@ body {
 	align-self: flex-end;
 }
 
-.contact{
+.flex__contact {
 	display: flex;
-	// align-items: center;
-	// align-self: center;
-	// justify-content: center;
-	// flex-direction: row;
-	width: 90vw;
-	height: 80vh;
-	background-color: red;
-	.flex-container{
-		display: flex;
-		// justify-content: center;
-		// align-items: center;
-		
+	background-color: white;
+	height: 30vh;
+	padding: 0.5em;
+	justify-content: center;
+
+	.flex__container-first {
+		width: 91.5rem;
+		height: 69.7rem;
+		background-color: rgb(52, 174, 52);
+		margin: 0em 0 0 1em;
+	}
+	.flex__container-first {
+		background-image: url('/img/info_fb_weronika.jpg');
+		background-position: center;
+		background-size: cover;
+		border-radius: 2rem;
+		border: 1rem solid white;
+	}
+	.flex__container-second {
+		width: 25vw;
+		height: 25vh;
+		// background-color: rgb(234, 243, 234);
+		margin: 0em 0.5em 0.5em 3em;
+
+		.contact_txt-heading {
+			// margin-top: .5em;
+			text-align: center;
+			font-size: 4rem;
+			font-weight: bold;
+			margin-bottom: 0.5em;
+			
+		}
+		.contact_txt-text {
+			// display: flex;
+			text-align: center;
+			margin: 0.2em;
+			font-size: 3rem;
+			margin-bottom: 0.5em;
+			// align-items: center;
+		}
 	}
 }
 
+.letter {
+	position: relative;
+	top: 30vw;
+	display: flex;
+	justify-content: center;
 
+	.to_me {
+		width: 60vw;
+		height: 30vh;
+		background-color: white;
+		border-radius: 20px;
+		border: 5px solid rgb(255, 119, 0);
+	}
+
+	.heading {
+		margin: 0.5em;
+		font-size: 3.8rem;
+		
+	}
+
+	.text {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 1.5em;
+		font-size: 3rem;
+		
+	}
+	.text_element {
+		align-self: center;
+		margin: 0.1em;
+		
+	}
+}
 
 // min-width - od tej rozdzielczosci
 // max-width - do tej rozdzielczosci
@@ -247,9 +314,13 @@ body {
 	// 	overflow: hidden;
 	// }
 	.nav {
+		width: 100%;
 		height: 30%;
 		font-size: 1.9rem;
 		margin: 0.2rem;
+		a {
+			font-size: 1.9rem;
+		}
 	}
 	.about_me {
 		&-heading {
@@ -292,7 +363,7 @@ body {
 		display: flex;
 		flex-direction: column;
 		z-index: -100;
-		
+
 		.my_offers {
 			align-self: center;
 			align-items: center;
@@ -313,7 +384,7 @@ body {
 		}
 	}
 
-	.mainHeading{
+	.mainHeading {
 		font-size: 4rem;
 		// color: white;
 	}
@@ -329,14 +400,13 @@ body {
 	.heading {
 		text-align: center;
 		font-size: 2rem;
-		margin: .5em;
+		margin: 0.5em;
 	}
-	
+
 	.main-text {
 		font-size: 1.5rem;
 		margin: 2em 1em 1em 1em;
 	}
-
 
 	.my_offers-heading {
 		// display: flex;
