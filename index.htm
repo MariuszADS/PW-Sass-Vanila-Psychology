@@ -7,6 +7,8 @@
     <title>WWW_Psycho</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/3eaab30e96.js" crossorigin="anonymous"></script>
+    <!-- Dodane przyciski dla pliku js -->
+    <script src="./js/buttons.js" defer></script>
 </head>
 
 <body>
@@ -16,17 +18,14 @@
         </div>
     </button> -->
 
-
-
     <nav class="nav">
         <ul class="nav_menu">
-            <li><a href="#O mnie">O mnie</a></li>
+            <li><a href="#O_mnie">O mnie</a></li>
             <li><a href="#Oferta">Oferta</a></li>
             <li><a href="#Cennik">Wizyta</a></li>
             <li><a href="#Kontakt">Kontakt</a></li>
         </ul>
     </nav>
-
 
     <header class="header-image">
         <div class="container">
@@ -36,7 +35,7 @@
     </header>
 
     <main>
-        <section class="about_me">
+        <section id="O_mnie" class="about_me">
             <h1 class="about_me-heading">Rozmowa z terapeutą</h1>
             <div class="about_me">
                 <!-- <br> -->
@@ -56,13 +55,13 @@
                 </div>
             </div>
         </section>
-        <section class="my_offers-section">
+        <section id="Oferta" class="my_offers-section">
             <h3 class="my_offers-heading">Oferuję</h3>
             <div class="row">
                 <div class="my_offers">
                     <img src="./img/Designer Challenges Himself To Create Logos With Hidden Meanings For A Year, And Result Is Amazing.jpg"
                         class="my_offers-image" alt="">
-                    <p class="my_offers-title">Psychoteriapia indywidualna</p>
+                    <p class="my_offers-title">Psychoterapia indywidualna</p>
                     <!-- <p class="my_offers-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
                 </div>
                 <div class="my_offers">
@@ -81,17 +80,14 @@
                     <p class="my_offers-title">Poradnictwo psychologiczne</p>
                     <!-- <p class="my_offers-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
                 </div>
-
             </div>
-
         </section>
-        <h1 class="mainHeading">Podczas wizyty</h1>
+        <h1 id="Cennik" class="mainHeading">Podczas wizyty</h1>
         <div class="flex-container">
             <div class="cards">
                 <div class="card one">
-                    <!-- <button><i class="far fa-question-circle"></i></button> -->
                     <div class="text">
-                        <h1 class="heading">Psychoteriapia indywidualna</h1>
+                        <h1 class="heading">Psychoterapia indywidualna</h1>
                         <p class="main-text">To forma terapii skoncentrowana na pracy z pojedynczym klientem. Celem
                             psychoterapii indywidualnej jest pomoc jednej osobie w zrozumieniu i rozwiązaniu jej
                             problemów emocjonalnych, psychicznych czy interpersonalnych. Terapeuta pomaga klientowi
@@ -100,7 +96,6 @@
                     </div>
                 </div>
                 <div class="card two">
-                    <!-- <button><i class="far fa-question-circle"></i></button> -->
                     <div class="text">
                         <h1 class="heading">Seksuolog</h1>
                         <p class="main-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus pariatur
@@ -109,7 +104,6 @@
                     </div>
                 </div>
                 <div class="card three">
-                    <!-- <button><i class="far fa-question-circle"></i></button> -->
                     <div class="text">
                         <h1 class="heading">Terapia poznawczo-behawioralna</h1>
                         <p class="main-text">To usługa oferowana param, które chcą poprawić jakość swojego związku lub
@@ -119,7 +113,6 @@
                     </div>
                 </div>
                 <div class="card four">
-                    <!-- <button><i class="far fa-question-circle"></i></button> -->
                     <div class="text">
                         <h1 class="heading">Poradnictwo psychologiczne</h1>
                         <p class="main-text">To forma pomocy psychologicznej skierowana do osób, które doświadczają
@@ -133,21 +126,19 @@
 
     </main>
 
-    <section class="flex__contact">
+    <section id="Kontakt" class="flex__contact">
         <div class="flex__container-first">
             <div class="contact_area-jpgFB"></div>
         </div>
-        <div class="flex__container-second">
+        <!-- <div class="flex__container-second">
             <div class="contact_txt">
                 <h1 class="contact_txt-heading">Kontakt</h1>
-                <p class="contact_txt-text">Adress: XXX</p>
+                <p class="contact_txt-text">Adres: XXX</p>
                 <p class="contact_txt-text">Email: wm.stepniewska.psycholog@gmail.com</p>
                 <p class="contact_txt-text">Tel: XXX pon-pt</p>
             </div>
-        </div>
-        </div>
+        </div> -->
     </section>
-
 
     <section class="letter">
         <div class="to_me">
@@ -160,31 +151,34 @@
         </div>
     </section>
 
+    <footer class="footer_section">
+        <div class="footer-contact">
+            <p><strong>Adres:</strong> XXX</p>
+            <p><strong>Email:</strong> wm.stepniewska.psycholog@gmail.com</p>
+            <p><strong>Tel:</strong> XXX (pon-pt)</p>
+            <p><strong>Godziny dostępności:</strong> XXX</p>
+        </div>
+        
+        <div class="footer-links">
+            <a href="#O_mnie">O mnie</a>
+            <a href="#Oferta">Oferta</a>
+            <a href="#Wizyta">Wizyta</a>
+            <a href="#Kontakt">Kontakt</a>
+        </div>
+        
+        <div class="footer-social">
+            <!-- Dodaj ikony/linki do mediów społecznościowych -->
+            <a href="https://www.facebook.com/profile.php?id=100087484616164"><i class="fab fa-facebook"></i></a>
+            <!-- <a href="link_do_instagrama"><i class="fab fa-instagram"></i></a> -->
+            <!-- Dodaj inne ikony społecznościowe w razie potrzeby -->
+        </div>
+        
+        <div class="footer-copyright">
+            <p>&copy; 2024 Weronika Stępniewska. Wszelkie prawa zastrzeżone.</p>
+            <p><strong>Stronę stworzył: Kacper Bąk</strong></p>
+        </div>
+    </footer>
 
-
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
 </body>
 
 </html>

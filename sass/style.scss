@@ -4,13 +4,15 @@
 	padding: 0;
 }
 
+
 html {
 	font-size: 10px;
 }
 
+
 body {
 	background-color: #c2d3eb;
-	font-style: 'helvetica', 'serif';
+	font-family: 'Lato',sans-serif;
 	font-size: 4rem;
 }
 
@@ -30,7 +32,7 @@ body {
 		align-items: center;
 		list-style-type: none;
 		a {
-			margin: 1em;
+			margin: .9em;
 			font-size: 3rem;
 			font-weight: normal;
 			text-decoration: none;
@@ -51,7 +53,7 @@ body {
 		display: flex;
 		justify-content: flex-end; /* Wyrównaj do lewej strony (osie głównej) */
 		align-items: flex-end; /* Wyrównaj do dolnej strony (osie poprzecznej)*/
-		height: 80vh; /* Dla przykładu, ustawia wysokość kontenera na całą wysokość widoku (viewport) */
+		height: 80vh; 
 		margin-right: 170px;
 		font-size: 3.5rem;
 
@@ -149,7 +151,6 @@ body {
 	font-size: 4rem;
 	margin-top: 2em;
 	border: 1px solid white;
-	
 }
 .flex-container {
 	display: flex;
@@ -181,7 +182,6 @@ body {
 .heading {
 	text-align: center;
 	font-size: 3rem;
-	
 }
 
 .main-text {
@@ -236,7 +236,6 @@ body {
 			font-size: 4rem;
 			font-weight: bold;
 			margin-bottom: 0.5em;
-			
 		}
 		.contact_txt-text {
 			// display: flex;
@@ -257,16 +256,17 @@ body {
 
 	.to_me {
 		width: 60vw;
-		height: 30vh;
+		height: 30%;
 		background-color: white;
 		border-radius: 20px;
 		border: 5px solid rgb(255, 119, 0);
+		z-index: -100;
+		margin-top: .5em;
 	}
 
 	.heading {
 		margin: 0.5em;
 		font-size: 3.8rem;
-		
 	}
 
 	.text {
@@ -275,12 +275,54 @@ body {
 		align-items: center;
 		margin: 1.5em;
 		font-size: 3rem;
-		
 	}
 	.text_element {
 		align-self: center;
 		margin: 0.1em;
-		
+	}
+}
+
+.footer_section {
+	display: flex;
+	position: relative;
+	top: 20em;
+	// margin: 1em;
+	background-color: white;
+	justify-content: center;
+	// justify-content: space-between;
+
+	// flex-wrap: nowrap;
+
+	.footer-contact {
+		margin: 1em;
+		padding: 0.5em;
+		font-size: 2.5rem;
+		flex-direction: column;
+	}
+
+	.footer-links {
+		margin: 1em;
+		display: flex;
+		flex-direction: column;
+		padding: 0.5em;
+		font-size: 2.5rem;
+		// text-decoration: ;
+
+		a {
+			color: blue;
+			padding: 0.1em;
+		}
+	}
+
+	.footer-social {
+		margin: 1em;
+		padding: 0.5em;
+	}
+
+	.footer-copyright p {
+		padding: 0.5em;
+		margin: 1em;
+		font-size: 3rem;
 	}
 }
 
@@ -409,9 +451,56 @@ body {
 	}
 
 	.my_offers-heading {
-		// display: flex;
-		// justify-content: center;
 		margin: 2em 0 1em 0;
 		font-size: 3.5rem;
+	}
+
+	#Kontakt.flex__contact {
+		flex-direction: column;
+		height: auto;
+		align-items: center;
+
+		.flex__container-first {
+			width: 100%;
+			height: 30vh;
+			margin: 0;
+		}
+
+		.flex__container-second {
+			width: 100%;
+			height: auto;
+			margin: 1em 0;
+		}
+	}
+
+	.letter {
+		.to_me {
+			width: 30rem;
+			text-align: center;
+			.heading {
+				font-size: 2rem;
+			}
+			.text {
+				font-size: 2rem;
+				align-items: center;
+			}
+		}
+	}
+
+	footer.footer_section {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+
+		.footer-contact{
+			font-size: 2rem;
+			margin: 0.2em;
+			// padding: 0.1em;
+		}
+		.footer-links,
+		.footer-social,
+		.footer-copyright {
+			margin-bottom: 0.5em;
+		}
 	}
 }
